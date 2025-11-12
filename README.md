@@ -22,7 +22,7 @@ The portfolio is built using **HTML**, **CSS**, and **Tailwind CSS (CDN)** to en
 
 ---
 
-## 🔗 Live Preview
+## 🔗 https://abdulrehman950.github.io/personal-portfolio/
 
 []
 
