@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap");
+
+:root {
+  --body-color: #f0f2f5;
+  --primary-color: #ffffff;
+  --secondary-color: #1a1f2c;
+  --heading-size: 32px;
+  --subheading-size: 24px;
+  --text-size: 18px;
+}
+/* Infinite Rotation for Background */
+@keyframes rotate360 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  /* Top-Left side adjust kiya gaya */
+  top: 10%; /* Top se thoda neeche */
+  left: 10%; /* Left se thoda andar */
+  transform: translate(-50%, -50%) rotate(0deg); /* Transform center se shuru hoga */
+
+  width: 1000px;
+  height: 1000px;
+  background-image: url("assets/images/banner-shape-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  animation: rotate360 30s linear infinite; /* Rotation chalti rahegi */
+  pointer-events: none;
+}
+
+/* Background Banner 2 (Bottom-Right) */
+body::after {
+  content: "";
+  position: fixed;
+  /* Bottom-Right side adjust kiya gaya */
+  bottom: 10%; /* Bottom se thoda upar */
+  right: 10%; /* Right se thoda andar */
+  transform: translate(50%, 50%) rotate(0deg); /* Transform center se shuru hoga */
+
+  width: 800px; /* Thoda chota size rakha hai */
+  height: 800px;
+  background-image: url("assets/images/banner-shape-1.png"); /* Same image use kar raha hoon */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  animation: rotate360 40s linear infinite reverse; /* Opposite direction mein rotate karega */
+  pointer-events: none;
+}
+
+/* Body Setup */
+body {
+  background-color: var(--body-color);
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: var(--secondary-color);
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 50px;
+}
+
+/* Content z-index */
+header,
+section,
+div {
+  position: relative;
+  z-index: 10;
+}
+
+/* Marquee Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.marquee-content {
+  animation: slideUp 6s linear infinite;
+}
+
+.work-experience-card:hover .marquee-content,
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    /* Half the content width is scrolled for smooth looping */
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-text {
+  animation: slideLeft 15s linear infinite; /* 15s speed, adjust if needed */
+}
