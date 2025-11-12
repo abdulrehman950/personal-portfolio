@@ -12,7 +12,7 @@
 This project is a **personal portfolio website** developed to represent my professional identity, skills, and projects.  
 It includes sections such as **Home, About, Services, Works, and Contact** — all designed with a clean and modern user interface.  
 The portfolio is built using **HTML**, **CSS**, and **Tailwind CSS (CDN)** to ensure a responsive and attractive layout.
-This is not Responsive site.Im working on it for more intersting and make it full responsive for all devices.Please pray for me Jazak ALLAH 
+This is not Responsive site.I'm working on it to make more intersting and make it full responsive for all devices.Please pray for me Jazak ALLAH 
 
 ---
 
