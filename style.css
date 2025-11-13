@@ -107,3 +107,11 @@ div {
 .scrolling-text {
   animation: slideLeft 15s linear infinite; /* 15s speed, adjust if needed */
 }
+@media (min-width: 1024px) {
+  /* Tailwind's 'lg' breakpoint */
+  :root {
+    --heading-size: 32px;
+    --subheading-size: 24px;
+    --text-size: 18px;
+  }
+}

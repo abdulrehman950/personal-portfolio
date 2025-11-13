@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-[var(--body-color)] px-6">
-    <!-- Header / Navbar -->
     <header class="flex justify-center mt-6 relative z-10">
       <nav
-        class="flex justify-start items-center bg-[var(--primary-color)] text-[var(--secondary-color)] w-[1116px] h-[76px] rounded-2xl shadow-md px-6 space-x-60"
+        class="flex justify-between items-center bg-[var(--primary-color)] text-[var(--secondary-color)] w-full max-w-[1116px] h-[76px] rounded-2xl shadow-md px-6"
       >
         <div class="flex items-center space-x-4">
           <img
@@ -22,370 +21,395 @@
           <h1 class="text-[var(--heading-size)] font-bold">Abdul Rehman</h1>
         </div>
 
-        <ul class="flex space-x-6 text-[var(--text-size)] font-medium">
+        <ul
+          class="hidden sm:flex space-x-6 text-[var(--text-size)] font-medium"
+        >
           <li><a href="#home" class="hover:underline">Home</a></li>
           <li><a href="#about" class="hover:underline">About</a></li>
           <li><a href="#services" class="hover:underline">Services</a></li>
           <li><a href="#works" class="hover:underline">Works</a></li>
           <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
+
+        <button class="flex flex-col space-y-1.5 sm:hidden p-2">
+          <span class="w-6 h-0.5 bg-[var(--secondary-color)]"></span>
+          <span class="w-6 h-0.5 bg-[var(--secondary-color)]"></span>
+          <span class="w-6 h-0.5 bg-[var(--secondary-color)]"></span>
+        </button>
       </nav>
     </header>
 
-    <!-- Profile + Work + Projects Section -->
-    <div class="flex justify-between mt-10 px-[6rem] space-x-6 items-start">
-      <!-- Left Column: Profile Card -->
+    <div class="max-w-[1116px] mx-auto">
       <div
-        class="bg-[var(--primary-color)] w-[370px] h-[620px] rounded-2xl shadow-lg flex flex-col items-center text-center p-6"
+        class="flex flex-col lg:flex-row justify-between mt-10 px-0 sm:px-[6rem] space-y-6 lg:space-y-0 lg:space-x-6 items-center lg:items-start"
       >
-        <img
-          src="assets/images/abdulrehman.jpg"
-          alt="Abdul Rehman"
-          class="w-[320px] h-[220px] object-cover mt-4"
-        />
-        <h2 class="text-2xl font-bold mt-5 text-[var(--secondary-color)]">
-          Abdul Rehman
-        </h2>
-        <p class="mt-2 text-gray-600 px-4 text-sm">
-          I’m a passionate Developer & UI/UX Designer focused on crafting
-          beautiful and user-friendly digital experiences.
-        </p>
-
-        <div class="flex justify-center items-center space-x-4 mt-6">
-          <a
-            href="#"
-            class="flex items-center justify-center bg-[#4770FF] text-white rounded-[10px] hover:opacity-90 transition w-[120px] h-[50px]"
-          >
-            <img
-              src="assets/images/icons/phone-call.png"
-              alt="Phone"
-              class="w-4 h-4 mr-2"
-            />Hire Me
-          </a>
-          <a
-            href="assets/CV/Abdul Rehman.pdf"
-            download
-            class="flex items-center justify-center border border-[#4770FF] text-[#4770FF] rounded-[10px] hover:bg-[#4770FF] hover:text-white transition w-[137px] h-[50px]"
-          >
-            <img
-              src="assets/images/icons/download.png"
-              alt="Download"
-              class="w-4 h-4 mr-2"
-            />Download CV
-          </a>
-        </div>
-
-        <!-- Social Media: Same line -->
-        <!-- Social Media: Fixed size, same line -->
-        <div class="flex justify-center space-x-2 mt-10 flex-nowrap">
-          <a
-            href="https://facebook.com/"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="assets/images/icons/fb.png"
-              alt="Facebook"
-              class="w-4 h-4"
-            />
-          </a>
-          <a
-            href="https://github.com/"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="/assets/images/icons/github.png"
-              alt="GitHub"
-              class="w-4 h-4"
-            />
-          </a>
-          <a
-            href="https://linkedin.com/"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="/assets/images/icons/linkedin.png"
-              alt="LinkedIn"
-              class="w-4 h-4"
-            />
-          </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="/assets/images/icons/twitter.png"
-              alt="Twitter"
-              class="w-4 h-4"
-            />
-          </a>
-          <a
-            href="https://instagram.com/"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="/assets/images/icons/instagram.png"
-              alt="Instagram"
-              class="w-4 h-4"
-            />
-          </a>
-          <a
-            href="https://wa.me/03440174950"
-            target="_blank"
-            class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
-          >
-            <img
-              src="/assets/images/icons/whatsapp.png"
-              alt="WhatsApp"
-              class="w-4 h-4"
-            />
-          </a>
-        </div>
-      </div>
-
-      <!-- Middle Column: Work + Expert -->
-      <div class="flex flex-col space-y-6 w-[415px]">
-        <!-- Work Experience Card -->
         <div
-          class="bg-[var(--primary-color)] w-full h-[298px] rounded-2xl shadow-lg p-6 overflow-hidden relative"
+          class="bg-[var(--primary-color)] w-full sm:w-[370px] h-auto rounded-2xl shadow-lg flex flex-col items-center text-center p-6"
+        >
+          <img
+            src="assets/images/abdulrehman.jpg"
+            alt="Abdul Rehman"
+            class="w-full h-auto max-w-xs object-cover mt-4"
+          />
+          <h2 class="text-2xl font-bold mt-5 text-[var(--secondary-color)]">
+            Abdul Rehman
+          </h2>
+          <p class="mt-2 text-gray-600 px-4 text-sm">
+            I’m a passionate Developer & UI/UX Designer focused on crafting
+            beautiful and user-friendly digital experiences.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6 w-full max-w-xs"
+          >
+            <a
+              href="#"
+              class="flex items-center justify-center bg-[#4770FF] text-white rounded-[10px] hover:opacity-90 transition w-full sm:w-[120px] h-[50px]"
+            >
+              <img
+                src="assets/images/icons/phone-call.png"
+                alt="Phone"
+                class="w-4 h-4 mr-2"
+              />Hire Me
+            </a>
+            <a
+              href="assets/CV/Abdul Rehman.pdf"
+              download
+              class="flex items-center justify-center border border-[#4770FF] text-[#4770FF] rounded-[10px] hover:bg-[#4770FF] hover:text-white transition w-full sm:w-[137px] h-[50px]"
+            >
+              <img
+                src="assets/images/icons/download.png"
+                alt="Download"
+                class="w-4 h-4 mr-2"
+              />Download CV
+            </a>
+          </div>
+
+          <div class="flex justify-center space-x-2 mt-10 flex-nowrap">
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="assets/images/icons/fb.png"
+                alt="Facebook"
+                class="w-4 h-4"
+              />
+            </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="/assets/images/icons/github.png"
+                alt="GitHub"
+                class="w-4 h-4"
+              />
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="/assets/images/icons/linkedin.png"
+                alt="LinkedIn"
+                class="w-4 h-4"
+              />
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="/assets/images/icons/twitter.png"
+                alt="Twitter"
+                class="w-4 h-4"
+              />
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="/assets/images/icons/instagram.png"
+                alt="Instagram"
+                class="w-4 h-4"
+              />
+            </a>
+            <a
+              href="https://wa.me/03440174950"
+              target="_blank"
+              class="w-9 h-9 flex items-center justify-center border border-gray-400 rounded-[10px] hover:bg-[#4770FF] hover:text-white transition"
+            >
+              <img
+                src="/assets/images/icons/whatsapp.png"
+                alt="WhatsApp"
+                class="w-4 h-4"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-6 w-full lg:w-[415px]">
+          <div
+            class="bg-[var(--primary-color)] w-full h-[298px] rounded-2xl shadow-lg p-6 overflow-hidden relative"
+          >
+            <h3
+              class="text-[var(--subheading-size)] font-bold mb-4 text-[var(--secondary-color)]"
+            >
+              💼 Education
+            </h3>
+            <div class="marquee-container h-full relative overflow-hidden">
+              <div
+                class="marquee-content flex flex-col absolute top-0 w-full animate-slideUp"
+              >
+                <div
+                  class="experience-entry mb-4 border-b border-gray-100 pb-3"
+                >
+                  <p class="font-bold text-lg">Matric With Computer</p>
+                  <p class="text-sm text-gray-600">
+                    Govt Higher Secondary School Noor Shah
+                  </p>
+                  <p class="text-xs text-gray-400 mt-1">2018 - 2020</p>
+                  <p class="text-xs text-gray-400 mt-1">721/1100</p>
+                </div>
+                <div
+                  class="experience-entry mb-4 border-b border-gray-100 pb-3"
+                >
+                  <p class="font-bold text-lg">ICs</p>
+                  <p class="text-sm text-gray-600">
+                    Govt Graduate College Sahiwal
+                  </p>
+                  <p class="text-xs text-gray-400 mt-1">2021 - 2023</p>
+                  <p class="text-xs text-gray-400 mt-1">625/1100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-[var(--primary-color)] w-full h-auto rounded-2xl shadow-lg p-6 flex flex-col"
+          >
+            <h3
+              class="text-[var(--subheading-size)] font-bold mb-6 text-[var(--secondary-color)]"
+            >
+              🛠 My Expert Area
+            </h3>
+            <div class="grid grid-cols-2 gap-6 justify-items-center">
+              <div class="flex flex-col items-center space-y-2">
+                <div
+                  class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/icons/figma.png"
+                    alt="Figma"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span class="text-sm font-medium text-[var(--secondary-color)]"
+                  >Figma</span
+                >
+              </div>
+              <div class="flex flex-col items-center space-y-2">
+                <div
+                  class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/icons/html.png"
+                    alt="HTML5"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span class="text-sm font-medium text-[var(--secondary-color)]"
+                  >HTML5</span
+                >
+              </div>
+              <div class="flex flex-col items-center space-y-2">
+                <div
+                  class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/icons/css-3.png"
+                    alt="CSS3"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span class="text-sm font-medium text-[var(--secondary-color)]"
+                  >CSS3</span
+                >
+              </div>
+              <div class="flex flex-col items-center space-y-2">
+                <div
+                  class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/icons/wordpress.png"
+                    alt="Wordpress"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <span class="text-sm font-medium text-[var(--secondary-color)]"
+                  >Wordpress</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[var(--primary-color)] w-full sm:w-[370px] h-auto rounded-2xl shadow-lg p-6 flex flex-col"
         >
           <h3
             class="text-[var(--subheading-size)] font-bold mb-4 text-[var(--secondary-color)]"
           >
-            💼 Work Experience
+            🖼 Projects
           </h3>
-          <div class="marquee-container h-full relative overflow-hidden">
+          <div class="flex flex-col gap-4 flex-1">
             <div
-              class="marquee-content flex flex-col absolute top-0 w-full animate-slideUp"
+              class="relative group w-full h-40 sm:h-52 rounded-2xl overflow-hidden"
             >
-              <div class="experience-entry mb-4 border-b border-gray-100 pb-3">
-                <p class="font-bold text-lg">Senior UI/UX Designer</p>
-                <p class="text-sm text-gray-600">Google</p>
-                <p class="text-xs text-gray-400 mt-1">Jan 2022 - Present</p>
-              </div>
-              <div class="experience-entry mb-4 border-b border-gray-100 pb-3">
-                <p class="font-bold text-lg">Frontend Developer</p>
-                <p class="text-sm text-gray-600">Microsoft</p>
-                <p class="text-xs text-gray-400 mt-1">Jun 2019 - Dec 2021</p>
+              <img
+                src="/assets/images/imgi_14_inspector.png"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+              >
+                <span class="text-white text-4xl font-bold">+</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- My Expert Area Card -->
-        <div
-          class="bg-[var(--primary-color)] w-full h-[298px] rounded-2xl shadow-lg p-6 flex flex-col"
-        >
-          <h3
-            class="text-[var(--subheading-size)] font-bold mb-6 text-[var(--secondary-color)]"
-          >
-            🛠 My Expert Area
-          </h3>
-          <div class="grid grid-cols-2 gap-6 justify-items-center">
-            <div class="flex flex-col items-center space-y-2">
+            <div
+              class="relative group w-full h-40 sm:h-52 rounded-2xl overflow-hidden"
+            >
+              <img
+                src="/assets/images/imgi_13_dr_search.jpeg"
+                class="w-full h-full object-cover rounded-2xl"
+              />
               <div
-                class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
               >
-                <img
-                  src="assets/images/icons/figma.png"
-                  alt="Figma"
-                  class="w-8 h-8"
-                />
+                <span class="text-white text-4xl font-bold">+</span>
               </div>
-              <span class="text-sm font-medium text-[var(--secondary-color)]"
-                >Figma</span
-              >
-            </div>
-            <div class="flex flex-col items-center space-y-2">
-              <div
-                class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
-              >
-                <img
-                  src="assets/images/icons/html.png"
-                  alt="HTML5"
-                  class="w-8 h-8"
-                />
-              </div>
-              <span class="text-sm font-medium text-[var(--secondary-color)]"
-                >HTML5</span
-              >
-            </div>
-            <div class="flex flex-col items-center space-y-2">
-              <div
-                class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
-              >
-                <img
-                  src="/assets/images/icons/css-3.png"
-                  alt="CSS3"
-                  class="w-8 h-8"
-                />
-              </div>
-              <span class="text-sm font-medium text-[var(--secondary-color)]"
-                >CSS3</span
-              >
-            </div>
-            <div class="flex flex-col items-center space-y-2">
-              <div
-                class="bg-[#D9D9D9] w-[112px] h-[60px] rounded-[10px] flex items-center justify-center"
-              >
-                <img
-                  src="/assets/images/icons/wordpress.png"
-                  alt="Wordpress"
-                  class="w-8 h-8"
-                />
-              </div>
-              <span class="text-sm font-medium text-[var(--secondary-color)]"
-                >Wordpress</span
-              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right Column: Projects (Vertical) -->
       <div
-        class="bg-[var(--primary-color)] w-[370px] h-[620px] rounded-2xl shadow-lg p-6 flex flex-col"
+        class="flex flex-col lg:flex-row justify-start px-0 sm:px-[6rem] mt-10 space-y-6 lg:space-y-0 lg:space-x-6"
       >
-        <h3
-          class="text-[var(--subheading-size)] font-bold mb-4 text-[var(--secondary-color)]"
+        <div
+          class="bg-[var(--primary-color)] w-full lg:w-[760px] h-auto rounded-2xl shadow-lg p-6 flex flex-col sm:flex-row justify-center lg:justify-between items-center space-y-4 sm:space-y-0 sm:space-x-4"
         >
-          🖼 Projects
-        </h3>
-        <div class="flex flex-col gap-4 flex-1">
-          <div class="relative group w-full h-52 rounded-2xl overflow-hidden">
-            <img
-              src="/assets/images/imgi_14_inspector.png"
-              class="w-full h-full object-cover rounded-2xl"
-            />
+          <div
+            class="bg-[#D9D9D9] w-full max-w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
+          >
             <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+              class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
             >
-              <span class="text-white text-4xl font-bold">+</span>
+              <img
+                src="/assets/images/icons/imgi_15_ui-ux.svg"
+                alt="UI/UX Design"
+                class="w-[80px] h-[80px] object-contain"
+              />
+            </div>
+            <p
+              class="mt-3 text-center text-[var(--secondary-color)] font-medium"
+            >
+              UI/UX Design
+            </p>
+          </div>
+
+          <div
+            class="bg-[#D9D9D9] w-full max-w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
+            >
+              <img
+                src="/assets/images/icons/imgi_16_app.svg"
+                alt="Web Development"
+                class="w-[80px] h-[80px] object-contain"
+              />
+            </div>
+            <p
+              class="mt-3 text-center text-[var(--secondary-color)] font-medium"
+            >
+              Web Development
+            </p>
+          </div>
+
+          <div
+            class="bg-[#D9D9D9] w-full max-w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
+            >
+              <img
+                src="/assets/images/icons/imgi_17_prd-design.svg"
+                alt="Product Design"
+                class="w-[80px] h-[80px] object-contain"
+              />
+            </div>
+            <p
+              class="mt-3 text-center text-[var(--secondary-color)] font-medium"
+            >
+              Product Design
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-[var(--primary-color)] w-full lg:w-[296px] rounded-2xl shadow-lg flex flex-col overflow-hidden relative h-auto lg:h-[298px]"
+        >
+          <div
+            class="bg-[#D9D9D9] h-10 rounded-xl mx-2 mt-4 flex items-center overflow-hidden"
+          >
+            <div
+              class="scrolling-text whitespace-nowrap text-[var(--secondary-color)] font-bold text-sm"
+            >
+              🚀 Available for Projects! 💡 Let's create something amazing! 🎨
+              UI/UX, Web, and Product Design! &nbsp; &nbsp; &nbsp; 🚀 Available
+              for Projects! 💡 Let's create something amazing! 🎨 UI/UX, Web,
+              and Product Design! &nbsp; &nbsp; &nbsp;
             </div>
           </div>
-          <div class="relative group w-full h-52 rounded-2xl overflow-hidden">
-            <img
-              src="/assets/images/imgi_13_dr_search.jpeg"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-            <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+
+          <div
+            class="flex-1 flex flex-col justify-center items-center text-center px-4 py-6"
+          >
+            <h3
+              class="text-[var(--subheading-size)] font-bold mb-3 text-[var(--secondary-color)]"
             >
-              <span class="text-white text-4xl font-bold">+</span>
-            </div>
+              Let's 👋 Work Together
+            </h3>
+            <p class="text-sm text-gray-600 mb-6">
+              I’m always excited to collaborate on creative projects. 💻🎨 Reach
+              out and let’s build something awesome together! ✨
+            </p>
+            <a
+              href="#contact"
+              class="flex items-center justify-center bg-[#4770FF] text-white rounded-[10px] w-32 h-10 hover:opacity-90 transition"
+            >
+              Contact Me
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Services + Work Together Section -->
-    <div class="flex justify-start px-[6rem] mt-10 space-x-6">
-      <!-- Services I Offered Card -->
-      <div
-        class="bg-[var(--primary-color)] w-[760px] h-[298px] rounded-2xl shadow-lg p-6 flex justify-between items-center"
-      >
-        <!-- Service Card 1 -->
-        <div
-          class="bg-[#D9D9D9] w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
-        >
-          <div
-            class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
-          >
-            <img
-              src="/assets/images/icons/imgi_15_ui-ux.svg"
-              alt="UI/UX Design"
-              class="w-[80px] h-[80px] object-contain"
-            />
-          </div>
-          <p class="mt-3 text-center text-[var(--secondary-color)] font-medium">
-            UI/UX Design
-          </p>
-        </div>
 
-        <!-- Service Card 2 -->
-        <div
-          class="bg-[#D9D9D9] w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
-        >
-          <div
-            class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
-          >
-            <img
-              src="/assets/images/icons/imgi_16_app.svg"
-              alt="Web Development"
-              class="w-[80px] h-[80px] object-contain"
-            />
-          </div>
-          <p class="mt-3 text-center text-[var(--secondary-color)] font-medium">
-            Web Development
-          </p>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div
-          class="bg-[#D9D9D9] w-[176px] h-[214px] rounded-2xl flex flex-col items-center justify-center"
-        >
-          <div
-            class="bg-white w-[146px] h-[136px] flex items-center justify-center rounded-2xl"
-          >
-            <img
-              src="/assets/images/icons/imgi_17_prd-design.svg"
-              alt="Product Design"
-              class="w-[80px] h-[80px] object-contain"
-            />
-          </div>
-          <p class="mt-3 text-center text-[var(--secondary-color)] font-medium">
-            Product Design
-          </p>
-        </div>
-      </div>
-      <!-- Let's Work Together Card -->
-      <div
-        class="bg-[var(--primary-color)] w-[296px] h-[298px] rounded-2xl shadow-lg flex flex-col overflow-hidden relative"
-      >
-        <div
-          class="bg-[#D9D9D9] h-10 rounded-xl mx-2 mt-2 flex items-center overflow-hidden"
-        >
-          <div
-            class="scrolling-text whitespace-nowrap text-[var(--secondary-color)] font-bold text-sm"
-          >
-            🚀 Available for Projects! 💡 Let's create something amazing! 🎨
-            UI/UX, Web, and Product Design! &nbsp; &nbsp; &nbsp; 🚀 Available
-            for Projects! 💡 Let's create something amazing! 🎨 UI/UX, Web, and
-            Product Design! &nbsp; &nbsp; &nbsp;
-          </div>
-        </div>
-
-        <div
-          class="flex-1 flex flex-col justify-center items-center text-center px-4"
-        >
-          <h3
-            class="text-[var(--subheading-size)] font-bold mb-4 text-[var(--secondary-color)]"
-          >
-            Let's 👋 Work Together
-          </h3>
-          <p class="text-sm text-gray-600 mb-6">
-            I’m always excited to collaborate on creative projects. 💻🎨 Reach
-            out and let’s build something awesome together! ✨
-          </p>
-          <a
-            href="#contact"
-            class="flex items-center justify-center bg-[#4770FF] text-white rounded-[10px] w-32 h-10 hover:opacity-90 transition"
-          >
-            Contact Me
-          </a>
-        </div>
-      </div>
-    </div>
     <footer
-      class="bg-[var(--primary-color)] text-[var(--secondary-color)] mt-10 px-[6rem] py-6 rounded-2xl shadow-inner **flex-shrink-0**"
+      class="bg-[var(--primary-color)] text-[var(--secondary-color)] mt-10 px-6 sm:px-[6rem] py-6 rounded-2xl shadow-inner **flex-shrink-0** w-full max-w-[1116px] mx-auto"
     >
       <div
-        class="w-full flex justify-center items-center text-sm text-gray-400"
+        class="w-full flex flex-col sm:flex-row justify-center items-center text-sm text-gray-400"
       >
-        <span class="mr-2">&copy; 2025</span>
+        <span class="mr-0 sm:mr-2">&copy; 2025</span>
         <span>Made with ❤️ by ABDUL REHMAN</span>
       </div>
     </footer>
