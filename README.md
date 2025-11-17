@@ -11,8 +11,7 @@
 
 This project is a **personal portfolio website** developed to represent my professional identity, skills, and projects.  
 It includes sections such as **Home, About, Services, Works, and Contact** — all designed with a clean and modern user interface.  
-The portfolio is built using **HTML**, **CSS**, and **Tailwind CSS (CDN)** . 
-This is not Responsive site.I'm working on it to make more intersting and make it full responsive for all devices.Please pray for me Jazak ALLAH 
+The portfolio is built using **HTML**, **CSS**, and **Tailwind CSS (CDN)** Full Responsive Layout.
 
 ---
 
@@ -22,7 +21,7 @@ This is not Responsive site.I'm working on it to make more intersting and make i
 - **Google Docs Documentation:** [https://docs.google.com/document/d/17MlPDKAf8ZrtlvSZl8XrYnhifHD9fcFVRj7-k8Nhktg/edit?usp=sharing]
 
 ---
-
+Live Preview:👇
 ## 🔗 https://abdulrehman950.github.io/personal-portfolio/
 
 []
