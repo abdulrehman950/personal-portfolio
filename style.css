@@ -21,6 +21,7 @@
 body::before {
   content: "";
   position: fixed;
+  scroll-behavior: smooth;
   /* Top-Left side adjust kiya gaya */
   top: 10%; /* Top se thoda neeche */
   left: 10%; /* Left se thoda andar */
